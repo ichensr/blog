@@ -121,6 +121,9 @@ a:focus,
 a:hover {
   color: #409EFF;
 }
+button, input, select, textarea {
+  outline: none;
+}
 [class^=el-icon-]{
   margin-right: 5px;
 }
@@ -143,7 +146,15 @@ ul,li{
     height: 0;
   }
 }
-
+.text-center{
+  text-align: center;
+}
+.text-left{
+  text-align: left;
+}
+.text-right{
+  text-align: right;
+}
 .float-left{
   float: left;
 }
@@ -186,14 +197,50 @@ ul,li{
 .text-pink{
   color: #ff7c7c;
 }
-fs-16{
+.fs-16{
   font-size: 16px;
 }
-fs-18{
+.fs-18{
   font-size: 18px;
 }
-fs-20{
+.fs-20{
   font-size: 20px;
+}
+.fs-22{
+  font-size: 22px;
+}
+.fs-24{
+  font-size: 24px;
+}
+.p-10{
+  padding: 10px;
+}
+.pt-10{
+   padding-top: 10px;
+ }
+.pb-10{
+   padding-bottom: 10px;
+ }
+.pl-10{
+  padding-left: 10px;
+}
+.pr-10{
+  padding-right: 10px;
+}
+.p-15{
+  padding: 15px;
+}
+.pt-15{
+  padding-top: 15px;
+}
+.pb-15{
+  padding-bottom: 15px;
+}
+.pl-15{
+  padding-left: 15px;
+}
+.pr-15{
+  padding-right: 15px;
 }
 .bg-white{
   background-color: #ffffff;
@@ -265,6 +312,9 @@ fs-20{
 @media only screen and (max-width: 768px){
   .el-card__body{
     padding: 15px;
+  }
+  .el-dialog{
+    width: 86%;
   }
 }
 .floashow-tyMeun i{

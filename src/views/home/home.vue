@@ -306,7 +306,6 @@ export default {
       activeSkill: ['1'],
       activeCommunity: ['1'],
       showSearch: false,
-      myWidth: 0
     }
   },
   computed: {

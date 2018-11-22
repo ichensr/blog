@@ -3,10 +3,13 @@ import Router from 'vue-router'
 import Layout from '@/views/layout/layout'
 import Home from '@/views/home/home'
 import Index from '@/views/index/index'
+import Login from '@/views/login'
 import Post from '@/views/post'
 import ArticleList from '@/views/article/list'
 import ArticleInfo from '@/views/article/info'
 import ArticleCreate from '@/views/article/create'
+import PersonUser from '@/views/personal/expuser'
+import NotFound from '@/views/404'
 // import HelloWorld from '@/components/HelloWorld'
 
 Vue.use(Router)
@@ -23,6 +26,22 @@ export default new Router({
         path: 'home',
         name: 'Home',
         component: Home
+      }, {
+        path: '/personal/expuser',
+        name: 'PersonUser',
+        component: PersonUser
+      }, {
+        path: '/article/create',
+        name: 'ArticleCreate',
+        component: ArticleCreate
+      }, {
+        path: '/article/info',
+        name: 'ArticleInfo',
+        component: ArticleInfo
+      }, {
+        path: '/article/list',
+        name: 'ArticleList',
+        component: ArticleList
       }]
     },
     {
@@ -31,42 +50,19 @@ export default new Router({
       component: Index
     },
     {
+      path: '/login',
+      name: 'login',
+      component: Login
+    },
+    {
       path: '/post',
       name: 'post',
       component: Post
     },
     {
-      path: '',
-      name: 'Layout',
-      component: Layout,
-      redirect: 'ArticleList',
-      children: [{
-        path: '/article/list',
-        name: 'article-list',
-        component: ArticleList
-      }]
-    },
-    {
-      path: '',
-      name: 'Layout',
-      component: Layout,
-      redirect: 'ArticleInfo',
-      children: [{
-        path: '/article/info',
-        name: 'article-info',
-        component: ArticleInfo
-      }]
-    },
-    {
-      path: '',
-      name: 'Layout',
-      component: Layout,
-      redirect: 'ArticleCreate',
-      children: [{
-        path: '/article/create',
-        name: 'article-create',
-        component: ArticleCreate
-      }]
+      path: '*',
+      name: 'notFound',
+      component: NotFound
     }
   ]
 })

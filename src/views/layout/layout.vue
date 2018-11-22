@@ -30,7 +30,7 @@
                 <el-col :xs="12" :sm="8" :md="8" :lg="5" :xl="4">
                   <div class="link-box float-right">
                     <a @click="showSearch = !showSearch" class="fs-18"><i class="el-icon-search fs-20"></i></a>
-                    <a class="lnk-login" href="javascript:;" rel="">登录</a>
+                    <a class="lnk-login" href="javascript:;" @click="dialogFormVisible = true" rel="">登录</a>
                     <a class="lnk-reg" href="javasript:;" rel="">注册</a>
                   </div>
                 </el-col>
