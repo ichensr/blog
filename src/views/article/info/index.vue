@@ -52,7 +52,6 @@
 import tyMenu from '@/components/tyMenu'
 import tyFooter from '@/components/tyFooter'
 export default {
-  name: 'article-list',
   data () {
     return {
       search: '',
