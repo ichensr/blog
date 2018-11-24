@@ -34,7 +34,7 @@ export default {
       defaultActive: '1',
       menus:[
         { path: '/article/list', title: '文章列表'},
-        { path: '/index2', title: '导航san'},
+        { path: '/personal/mySet', title: '信息设置'},
         { path: '/index3', title: '导航si'},
         { path: '/index4', title: '导航wu '}
       ],

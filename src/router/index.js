@@ -4,6 +4,7 @@ import Layout from '@/views/layout/layout'
 import Home from '@/views/home/home'
 import Index from '@/views/index/index'
 import Login from '@/views/login'
+import Join from '@/views/join'
 import Post from '@/views/post'
 import ArticleList from '@/views/article/list'
 import ArticleInfo from '@/views/article/info'
@@ -13,9 +14,11 @@ import PersonReply from '@/views/personal/replyList'
 import PersonMore01 from '@/views/personal/moreList01'
 import PersonMore02 from '@/views/personal/moreList02'
 import PersonMore03 from '@/views/personal/moreList03'
+import Getpassword from '@/views/personal/getpassword'
 import MyExpress from '@/views/personal/myExpressList'
 import MyLetter from '@/views/personal/myLetter'
 import MyRemind from '@/views/personal/myRemind'
+import MySet from '@/views/personal/mySet'
 import NotFound from '@/views/404'
 // import HelloWorld from '@/components/HelloWorld'
 
@@ -62,9 +65,17 @@ export default new Router({
         name: 'MyLetter',
         component: MyLetter
       }, {
+        path: '/personal/getpassword',
+        name: 'getpassword',
+        component: Getpassword
+      }, {
         path: '/personal/myRemind',
         name: 'MyRemind',
         component: MyRemind
+      }, {
+        path: '/personal/mySet',
+        name: 'mySet',
+        component: MySet
       }, {
         path: '/article/create',
         name: 'ArticleCreate',
@@ -88,6 +99,11 @@ export default new Router({
       path: '/login',
       name: 'login',
       component: Login
+    },
+    {
+      path: '/join',
+      name: 'join',
+      component: Join
     },
     {
       path: '/post',
